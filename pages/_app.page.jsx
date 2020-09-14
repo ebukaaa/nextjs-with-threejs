@@ -1,13 +1,9 @@
 import "./style.scss";
 import { func, string, shape } from "prop-types";
-import { useStore } from "./utils";
 
 export const useApp = ({ Component, pageProps }) => {
-  useStore();
-
   return (
     <main id="app">
-      App
       <Component {...pageProps} />
     </main>
   );
